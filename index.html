@@ -1,30 +1,29 @@
-<!DOCTYPE html> <!--Defines documents as HTML--> 
-<html lang="en"> <!--Defines language as 'English'--> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Responsive Nav</title>
+  </head>
 
-   <head>
-      <meta charset="utf-8"> <!--Defines standard character encoding--> 
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Supports older versions of IE, not required--> 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Fixes and sets a width of a page on all devices to allow responsive--> 
-      <link rel=“stylesheet” href="../CSS/normalize.css"> <!--Links to normalize stylesheet-->
-      <link rel="stylesheet" href="../newTemplate/newTemplate.css"> <!--Links to stylesheet-->
-      <title>newTemplate</title> 
-   </head>
+  <body id="top">
+    <header>
+      <nav>
+        <a href="../../index.html" id="home-nav">Home</a>
+        <a href="../projects.html#counter-link" id="projects-nav">Projects</a>
+        <a class="active" href="./numberCounter.html" id="number-nav">Responsive Nav</a>
+      </nav>
+    </header>
 
-   <body> 
+    <main>
+        <script type="text/javascript" src="./app.js"></script>
+    </main>
 
-      <header>
-         <h1 id="heading">Lorem Ipsum</h1>
-      </header>
-
-      <main>
-         <div class="content"></div>
-      </main>
-
-      <footer>
-         <h3 id="info">Visit LoremIpsum.com for more information.</h3>
-      </footer>
-      
-      <script type="text/javascript" src="location/blank.js"></script> <!--Links to JS sheet, located here so that the webpage can parse other content first before JS-->
-   </body>
-
+    <footer>
+      <a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a>
+      <a id="number" href="tel:07586653620">07586653620</a>
+    </footer>
+  </body>
 </html>
