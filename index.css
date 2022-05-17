@@ -1,84 +1,126 @@
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding: 0;
-    border: 0;
     margin: 0;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #55a630;
+    color: white;
 }
 
-body { 
-    float: none !important;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    font-size: 15px; 
-    background-color:aliceblue;
+.brand {
+    font-size: 24px;
+    margin: 11px; /*Cannot work out where 4px are coming from, hence 11px instead of 13px*/
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color:#9D79BC;
-    font-size: 30px;
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-nav a {
-    display: inline-block;
-    color: aliceblue;
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
     text-decoration: none;
-    padding: 0 10px;
-    margin: 0 10px;
+    padding: 0 15px;
+    display: block;
     line-height: 50px;
+    color: white;
 }
 
-nav a:hover {
-    background-color:#A14DA0;
-    color: aliceblue;
+.navbar li:hover {
+    background-color: #80b918;
 }
 
-nav a.active {
-    background-color:aliceblue;
-    color: #8CA0D7;
+.navbar li a.current {
+    background-color: white;
+    color: #80b918;
 }
 
-#home-nav,
-#projects-nav {
-    float: left;
+.toggle-button {
+    position: absolute;
+    top: 12.5px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
 }
 
-#number-nav {
-    float: right;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+    .toggle-button {
+        display: flex;
+    }
+    .links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: #55a630;
+    }
+    .links li {
+        text-align: center;
+    }
+    .links li a {
+        line-height: 30px;
+    }
+    .links.active {
+        display: flex;
+    }
 }
 
 footer {
-    background-color:#9D79BC;
-    font-size: 30px;
-    padding: 0 5%;
-    width: 100%;
+    background-color: #55a630;
+    color: white;
     position: absolute;
     bottom: 0;
-    text-align: center;
+    width: 100%;
 }
 
-footer a {
-    text-align: center;
-    line-height: 50px;
-    color: aliceblue;
-    padding: 0 10px;
+footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-#email:hover {
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    display: block;
+}
+
+footer li a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 650px) {
-    footer {
-        font-size: 15px;
-    }
-    footer a {
-        padding: 0 5px;
-    }
 }

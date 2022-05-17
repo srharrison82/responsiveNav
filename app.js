@@ -1,12 +1,6 @@
-console.log('Hello World');
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const links = document.getElementsByClassName("links")[0];
 
-const navToggle = document.querySelector('.nav-toggle');
-const links = document.querySelector('.links');
-
-navToggle.addEventListener('click', function() {
-    if (links.classList.contains('show-list')) {
-        links.classList.remove('show-list');
-    } else {
-        links.classList.add('show.links');
-    }
+toggleButton.addEventListener("click", function () {
+  links.classList.toggle("active");
 });

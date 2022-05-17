@@ -10,14 +10,19 @@
 
   <body id="top">
     <header>
-      <nav>
-        <button class="nav-toggle">
-          <h1>CLICK</h1>
-        </button>
+      <nav class="navbar">
+        <div class="brand">Brand Name</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
         <div class="links">
-          <a href="./index.html" id="home-nav">Home</a>
-          <a href="./index.html" id="projects-nav">Projects</a>
-          <a class="active" href="./index.html" id="number-nav">Responsive Nav</a>
+          <ul>
+            <li><a class="current" href="#">Responsive Nav</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -27,8 +32,10 @@
     </main>
 
     <footer>
-      <a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a>
-      <a id="number" href="tel:07586653620">07586653620</a>
+      <ul>
+        <li><a href="mailto:srharrison82@gmail.com?subject=subject text" id="email">srharrison82@gmail.com</a></li>
+        <li><a id="number" href="tel:07586653620">07586653620</a></li>
+      </ul>
     </footer>
   </body>
 </html>
